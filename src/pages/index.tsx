@@ -5,6 +5,15 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
 
+import {
+  MapIcon,
+  CalendarIcon,
+  SeedlingIcon,
+  ThermometerIcon,
+  CarrotIcon,
+  LockIcon,
+} from '../components/icons/FeatureIcons';
+
 import styles from './index.module.css';
 
 function HomepageHeader() {
@@ -31,7 +40,7 @@ function HomepageHeader() {
 
 type FeatureItem = {
   title: string;
-  icon: string;
+  Icon: React.ComponentType<{ size?: number; className?: string }>;
   description: string;
   link: string;
 };
@@ -39,54 +48,56 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
   {
     title: 'Visual Garden Layout',
-    icon: '🗺️',
+    Icon: MapIcon,
     description:
       'Design your garden with an intuitive canvas. Create beds of any shape, place plants with proper spacing, and visualize your entire garden at a glance.',
     link: '/docs/features/garden-layout',
   },
   {
     title: 'Smart Planting Schedule',
-    icon: '📅',
+    Icon: CalendarIcon,
     description:
       'Get personalized planting dates based on your location and frost dates. Track your plantings from seed to harvest with an interactive calendar.',
     link: '/docs/features/planting-schedule',
   },
   {
     title: 'Comprehensive Plant Database',
-    icon: '🌱',
+    Icon: SeedlingIcon,
     description:
       'Browse nearly 4,000 vegetable varieties with detailed growing information. Find the perfect plants for your climate and growing conditions.',
     link: '/docs/features/vegetables-database',
   },
   {
     title: 'Growing Degree Days',
-    icon: '🌡️',
+    Icon: ThermometerIcon,
     description:
       'Track heat accumulation to predict plant maturity more accurately than counting calendar days. Integrated weather data keeps you informed.',
     link: '/docs/guides/gdd-tracking',
   },
   {
     title: 'Harvest Tracking',
-    icon: '🥕',
+    Icon: CarrotIcon,
     description:
       'Record your harvests with quantity, quality, and notes. Analyze your yields over time to improve your garden planning.',
     link: '/docs/features/harvest-tracking',
   },
   {
     title: 'Privacy-First Design',
-    icon: '🔒',
+    Icon: LockIcon,
     description:
       'Your data stays on your device. No accounts required, no tracking, no data harvesting. Your garden, your business.',
     link: '/docs/reference/data-management',
   },
 ];
 
-function Feature({ title, icon, description, link }: FeatureItem) {
+function Feature({ title, Icon, description, link }: FeatureItem) {
   return (
     <div className={clsx('col col--4', styles.feature)}>
       <Link to={link} className={styles.featureLink}>
         <div className="feature-card">
-          <div className="feature-icon">{icon}</div>
+          <div className="feature-icon">
+            <Icon size={40} />
+          </div>
           <Heading as="h3">{title}</Heading>
           <p>{description}</p>
         </div>

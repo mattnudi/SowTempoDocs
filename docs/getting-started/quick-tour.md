@@ -20,18 +20,18 @@ SowTempo has a simple layout with three main areas:
 
 Click any item in the sidebar to switch sections:
 
-| Icon | Section           | Purpose                                  |
-| ---- | ----------------- | ---------------------------------------- |
-| 🏠   | Dashboard         | Overview, weather, quick stats           |
-| 📅   | Planting Schedule | Calendar view of all plantings           |
-| ✅   | Tasks             | To-do list auto-generated from plantings |
-| 🗺️   | Garden Layout     | Visual garden designer                   |
-| 🌱   | Vegetables        | Plant database with 3,900+ varieties     |
-| 📔   | Garden Journal    | Notes and photos                         |
-| 🌿   | Seasons           | Manage growing seasons                   |
-| 🌰   | Seed Inventory    | Track seed stock                         |
-| 📊   | Analytics         | Charts and insights                      |
-| ⚙️   | Settings          | Preferences and configuration            |
+| Section           | Purpose                                  |
+| ----------------- | ---------------------------------------- |
+| Dashboard         | Overview, weather, quick stats           |
+| Planting Schedule | Calendar view of all plantings           |
+| Tasks             | To-do list auto-generated from plantings |
+| Garden Layout     | Visual garden designer                   |
+| Vegetables        | Plant database with 3,900+ varieties     |
+| Garden Journal    | Notes and photos                         |
+| Seasons           | Manage growing seasons                   |
+| Seed Inventory    | Track seed stock                         |
+| Analytics         | Charts and insights                      |
+| Settings          | Preferences and configuration            |
 
 Additional tracking features are grouped under **Tracking**:
 
