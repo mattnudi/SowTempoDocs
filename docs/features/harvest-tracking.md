@@ -12,12 +12,12 @@ Track your garden's productivity by logging harvests. Over time, this data helps
 
 At the top of the Harvests page, summary cards show:
 
-| Metric                | Description                             |
-| --------------------- | --------------------------------------- |
-| **Total Weight**      | Combined harvest weight this season     |
-| **Harvests Recorded** | Number of harvest entries               |
-| **Average Yield**     | Mean harvest per entry                  |
-| **Trend**             | Productivity direction (up/down/stable) |
+| Metric          | Description                           |
+| --------------- | ------------------------------------- |
+| **Total lbs**   | Combined harvest weight (in pounds)   |
+| **Harvests**    | Number of harvest entries recorded    |
+| **Avg Quality** | Average quality rating (1-5 stars)    |
+| **Varieties**   | Number of unique vegetables harvested |
 
 These update as you log new harvests.
 
@@ -52,17 +52,19 @@ Choose the appropriate unit:
 | **Ounces (oz)**    | Smaller quantities                   |
 | **Kilograms (kg)** | Metric weight                        |
 | **Grams (g)**      | Herbs, small items                   |
-| **Pieces**         | Countable items (peppers, cucumbers) |
-| **Bunches**        | Leafy greens, herbs                  |
+| **Count**          | Countable items (peppers, cucumbers) |
 
 ### Quality Ratings
 
-Rate your harvest quality:
+Rate your harvest quality on a 1-5 star scale:
 
-- **Excellent** — Perfect specimens
-- **Good** — Minor imperfections
-- **Fair** — Usable but flawed
-- **Poor** — Barely usable
+| Rating | Label     | Description         |
+| ------ | --------- | ------------------- |
+| 5      | Excellent | Perfect specimens   |
+| 4      | Good      | Minor imperfections |
+| 3      | Average   | Usable but flawed   |
+| 2      | Below Avg | Some issues         |
+| 1      | Poor      | Barely usable       |
 
 Quality ratings help identify growing issues and compare variety performance.
 
@@ -146,16 +148,6 @@ When viewing a planting:
 3. The planting is pre-selected
 4. Complete the harvest entry
 
-## Weather Snapshots
-
-When you log a harvest, SowTempo captures the current weather:
-
-- Temperature
-- Conditions
-- Recent precipitation
-
-This helps correlate weather with harvest quality and timing.
-
 ## Harvest Analytics
 
 Your harvest data feeds into Analytics:
@@ -169,10 +161,9 @@ Your harvest data feeds into Analytics:
 
 ### Performance Metrics
 
-- Best producing varieties
-- Yield per plant
+- Top performing vegetables (ranked by weight)
 - Peak harvest periods
-- Year-over-year comparisons
+- Year-over-year comparisons (when data available)
 
 See [Analytics](/docs/features/analytics) for more details.
 

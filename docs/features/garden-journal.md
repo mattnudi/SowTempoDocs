@@ -53,9 +53,8 @@ Write as little or as much as you want. Quick notes and detailed observations ar
 ### Photo Features
 
 - **Multiple photos** — Add several images per entry
-- **Captions** — Add descriptions to each photo
-- **Reorder** — Drag to arrange photos
 - **Full-size view** — Click to enlarge
+- **Remove photos** — Click the remove button on any photo
 
 Photos are stored locally with your data.
 
@@ -88,7 +87,7 @@ Tags help organize and find entries later.
 
 - Click the **x** on a tag to remove it
 - Tags are automatically saved
-- Unused tags are cleaned up over time
+- Reuse existing tags when possible for consistency
 
 ## Linking to Plantings and Beds
 
@@ -186,7 +185,6 @@ When you create an entry, SowTempo captures current weather:
 
 - Temperature
 - Conditions
-- Wind
 - Precipitation
 
 This context helps you correlate observations with weather conditions.

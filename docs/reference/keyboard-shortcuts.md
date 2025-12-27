@@ -22,16 +22,12 @@ The Garden Layout page has the most extensive keyboard support. All shortcuts be
 
 ### Canvas Navigation
 
-| Shortcut         | Action                    |
-| ---------------- | ------------------------- |
-| **Scroll Wheel** | Zoom in/out               |
-| **Space + Drag** | Pan canvas                |
-| **F**            | Fit all beds in view      |
-| **R**            | Reset view (pan and zoom) |
-| **+** or **=**   | Zoom in                   |
-| **-**            | Zoom out                  |
-| **Cmd/Ctrl + 0** | Reset zoom to 100%        |
-| **S**            | Zoom to selected bed      |
+| Shortcut         | Action      |
+| ---------------- | ----------- |
+| **Scroll Wheel** | Zoom in/out |
+| **Space + Drag** | Pan canvas  |
+
+Zoom controls (fit to view, reset, zoom in/out) are available via the toolbar buttons in the canvas header.
 
 ### Grid and View Controls
 
@@ -45,7 +41,6 @@ The Garden Layout page has the most extensive keyboard support. All shortcuts be
 | ----------------- | ------------------------------- |
 | **Click**         | Select single bed               |
 | **Shift + Click** | Add to selection (multi-select) |
-| **Cmd/Ctrl + A**  | Select all beds                 |
 | **Escape**        | Deselect all                    |
 
 ### Editing
@@ -104,9 +99,9 @@ Standard keyboard behavior applies in modals:
 
 1. **Learn canvas tools first** — V, B, C, P, A let you quickly switch between modes
 2. **Use Cmd/Ctrl + Z freely** — Undo is your friend for layout changes
-3. **F is your friend** — Fit to view when you've lost track of your beds
-4. **Space + drag** — Fastest way to pan around a large garden
-5. **G toggles the grid** — Helps with alignment and spacing
+3. **Space + drag** — Fastest way to pan around a large garden
+4. **G toggles the grid** — Helps with alignment and spacing
+5. **Use toolbar buttons** — Zoom controls are in the canvas header toolbar
 
 ---
 

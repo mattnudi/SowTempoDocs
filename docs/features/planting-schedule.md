@@ -189,14 +189,12 @@ Click **Create Planting** to add to your schedule.
 
 ### Updating Dates
 
-As your season progresses, update dates from "estimated" to "actual":
+As your season progresses, update dates to reflect reality:
 
 1. Open the planting editor
 2. Click a date field
-3. Toggle from "Estimated" to "Actual"
-4. Select the actual date
-
-![Actual vs Estimated](/img/screenshots/schedule-actual-date.png)
+3. Select the new date
+4. Save changes
 
 ### Changing Status
 

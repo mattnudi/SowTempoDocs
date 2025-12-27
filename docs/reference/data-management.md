@@ -40,11 +40,10 @@ Your data is stored in a SQLite database at:
 
 Your data folder contains:
 
-| File            | Contents                               |
-| --------------- | -------------------------------------- |
-| `sowtempo.db`   | All your garden data (SQLite database) |
-| `settings.json` | Application preferences                |
-| `images/`       | Photos from journal entries (if any)   |
+| File          | Contents                               |
+| ------------- | -------------------------------------- |
+| `sowtempo.db` | All your garden data (SQLite database) |
+| `images/`     | Photos from journal entries (if any)   |
 
 ## Creating Backups
 
@@ -55,7 +54,7 @@ The recommended method:
 1. Go to **Settings > Data Management**
 2. Click **Create Backup**
 3. Choose a save location
-4. A `.sowtempo-backup` file is created
+4. A `.json` backup file is created
 
 This backup includes:
 
@@ -97,7 +96,7 @@ Good backup locations:
 
 1. Go to **Settings > Data Management**
 2. Click **Restore Backup**
-3. Select your `.sowtempo-backup` file
+3. Select your `.json` backup file
 4. Confirm restoration
 
 :::warning
@@ -111,48 +110,7 @@ Restoring replaces all current data. Consider backing up current data first.
 3. Replace the existing folder with your backup
 4. Reopen SowTempo
 
-## Exporting Data
-
-Export your data in portable formats:
-
-### CSV Export
-
-Export individual data types as CSV:
-
-1. Go to **Settings > Data Management**
-2. Click **Export Data**
-3. Select what to export:
-   - Plantings
-   - Harvests
-   - Journal entries
-   - Inventory
-   - All data
-4. Choose save location
-5. CSV files are created
-
-### What's Included
-
-CSV exports contain:
-
-- All fields for each data type
-- Dates in ISO format
-- IDs for linking records
-- Human-readable values
-
-### Using Exported Data
-
-CSV files can be:
-
-- Opened in Excel or Google Sheets
-- Imported into other applications
-- Used for data analysis
-- Archived for long-term storage
-
 ## Importing Data
-
-### Restoring CSV Exports
-
-Currently, CSV files cannot be re-imported directly. Use the backup/restore feature for full data restoration.
 
 ### Migrating from Other Apps
 
@@ -193,9 +151,10 @@ Your garden data is never automatically deleted.
 In **Settings > Database**, see:
 
 - Database version
-- Total records
-- Database size
-- Last modified date
+- Built-in vegetables count
+- Built-in varieties count
+- Custom vegetables/varieties counts
+- Database file path
 
 ### Database Schema
 
@@ -264,9 +223,8 @@ Currently, the database is not encrypted. If you need encryption:
 
 To share your data:
 
-1. Export to CSV
-2. Share specific files
-3. Or share backup files
+1. Create a backup file
+2. Share the backup file with others
 
 Do not share your database file if it contains personal information.
 
