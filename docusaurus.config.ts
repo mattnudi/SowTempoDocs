@@ -74,7 +74,7 @@ const config: Config = {
           position: 'left',
         },
         {
-          href: 'https://github.com/mattnudi/SowTempo',
+          href: 'https://github.com/mattnudi/SowTempoDocs',
           label: 'GitHub',
           position: 'right',
         },
@@ -119,7 +119,7 @@ const config: Config = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/mattnudi/SowTempo',
+              href: 'https://github.com/mattnudi/SowTempoDocs',
             },
             {
               label: 'Privacy Policy',

@@ -60,7 +60,7 @@ If we make changes to this privacy policy, we will update this page and the "Las
 
 ## Questions?
 
-If you have questions about our privacy practices, please [open an issue on GitHub](https://github.com/mattnudi/SowTempo/issues).
+If you have questions about our privacy practices, please [open an issue on GitHub](https://github.com/mattnudi/SowTempoDocs/issues).
 
 ---
 

@@ -21,7 +21,7 @@ SowTempo is a desktop application available for macOS, Windows, and Linux. Downl
 
 ## Download
 
-Download the latest version from the [SowTempo releases page](https://github.com/mattnudi/SowTempo/releases).
+Download the latest version from the [SowTempo releases page](https://github.com/mattnudi/SowTempoDocs/releases).
 
 Choose the appropriate file for your system:
 
@@ -138,7 +138,7 @@ Some distributions may need additional libraries:
 sudo apt install libgtk-3-0 libnotify4 libnss3 libxss1
 ```
 
-For other issues, see [Troubleshooting](/docs/reference/troubleshooting) or [report an issue](https://github.com/mattnudi/SowTempo/issues).
+For other issues, see [Troubleshooting](/docs/reference/troubleshooting) or [report an issue](https://github.com/mattnudi/SowTempoDocs/issues).
 
 ---
 

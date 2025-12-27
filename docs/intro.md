@@ -51,7 +51,7 @@ Ready to get growing? Here's how to start:
 - Browse the **[Features](/docs/category/features)** section to learn about specific tools
 - Follow the **[Guides](/docs/category/guides)** for step-by-step workflows
 - Check the **[Reference](/docs/category/reference)** for keyboard shortcuts and troubleshooting
-- Report issues or suggest features on [GitHub](https://github.com/mattnudi/SowTempo/issues)
+- Report issues or suggest features on [GitHub](https://github.com/mattnudi/SowTempoDocs/issues)
 
 ---
 

@@ -256,7 +256,7 @@ Many issues are fixed in newer versions:
 
 If you can't resolve the problem:
 
-1. Go to [GitHub Issues](https://github.com/mattnudi/SowTempo/issues)
+1. Go to [GitHub Issues](https://github.com/mattnudi/SowTempoDocs/issues)
 2. Search for existing reports
 3. If not found, create a new issue with:
    - SowTempo version

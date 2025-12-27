@@ -173,7 +173,7 @@ Or check manually in **Settings > About > Check for Updates**.
 
 ### How do I report bugs?
 
-Report bugs on [GitHub Issues](https://github.com/mattnudi/SowTempo/issues):
+Report bugs on [GitHub Issues](https://github.com/mattnudi/SowTempoDocs/issues):
 
 1. Search existing issues first
 2. Create new issue with details
@@ -181,7 +181,7 @@ Report bugs on [GitHub Issues](https://github.com/mattnudi/SowTempo/issues):
 
 ### How do I request features?
 
-Feature requests are welcome on [GitHub Issues](https://github.com/mattnudi/SowTempo/issues). Tag with "enhancement" or "feature request."
+Feature requests are welcome on [GitHub Issues](https://github.com/mattnudi/SowTempoDocs/issues). Tag with "enhancement" or "feature request."
 
 ### Is there a user community?
 
@@ -208,4 +208,4 @@ Manual migration is required:
 
 ---
 
-Still have questions? [Open an issue on GitHub](https://github.com/mattnudi/SowTempo/issues).
+Still have questions? [Open an issue on GitHub](https://github.com/mattnudi/SowTempoDocs/issues).
