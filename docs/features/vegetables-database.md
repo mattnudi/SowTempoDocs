@@ -68,11 +68,13 @@ Filter by cold hardiness:
 
 ### Days to Maturity
 
-Use the slider to filter by harvest timeline:
+Filter by harvest timeline using presets or custom range:
 
-- Quick crops (30-45 days)
-- Medium season (45-75 days)
-- Long season (75+ days)
+- Quick (< 45 days)
+- Medium (45-75 days)
+- Long (75-120 days)
+- Very Long (120+ days)
+- Or set a custom min/max range
 
 ### Zone Compatibility
 
@@ -142,8 +144,11 @@ Click into a specific variety for cultivar-specific data:
 
 ### Variety Actions
 
+From a variety detail page, you can:
+
 - **Add to Schedule** — Create a planting with this variety
-- **Add to Favorites** — Save for quick access
+- **Edit** — Modify variety details (custom varieties only)
+- **Delete** — Remove the variety (custom varieties only)
 
 ## Custom Plants
 
@@ -151,7 +156,7 @@ Add your own vegetables and varieties that aren't in the database:
 
 ### Adding a Custom Plant
 
-1. Click **+ Add Custom Plant**
+1. Click **Custom Plant** button in the header
 2. Fill in the required fields:
    - Plant name
    - Category
@@ -192,11 +197,11 @@ From any vegetable detail page:
 
 When adding a plant placement in Garden Layout:
 
-1. Select the **Plant** tool
+1. Select the **Add Placement** tool (A key)
 2. Click in a bed
-3. Search for the vegetable
-4. Select variety
-5. Configure spacing and count
+3. Search for and select the vegetable
+4. Select variety (optional)
+5. Configure spacing and quantity
 
 ## Tips for Using the Database
 

@@ -8,271 +8,220 @@ The Analytics section provides charts, insights, and reports to help you underst
 
 ![Analytics Overview](/img/screenshots/analytics-overview.png)
 
-## Analytics Sections
+## Analytics Tabs
 
 Navigate between analytics views using the tabs:
 
-| Tab             | Purpose                         |
-| --------------- | ------------------------------- |
-| **Harvest**     | Yield and productivity analysis |
-| **Planting**    | Schedule and status breakdown   |
-| **Weather**     | Climate patterns and trends     |
-| **Utilization** | Garden space usage              |
-| **Forecast**    | Predictions and projections     |
+| Tab             | Purpose                          |
+| --------------- | -------------------------------- |
+| **Harvest**     | Yield and productivity analysis  |
+| **Planting**    | Schedule and status breakdown    |
+| **Weather**     | GDD and temperature trends       |
+| **Utilization** | Garden space usage and diversity |
+| **Forecast**    | Upcoming harvest predictions     |
+
+## Filtering Data
+
+Use the filter controls at the top to refine what data is shown:
+
+### Date Range
+
+| Preset            | Description             |
+| ----------------- | ----------------------- |
+| **Year to Date**  | January 1 to today      |
+| **Last 3 Months** | Rolling 90 days         |
+| **Last 6 Months** | Rolling 180 days        |
+| **Last Year**     | Previous 365 days       |
+| **All Time**      | Everything recorded     |
+| **Custom**        | Pick specific start/end |
+
+When Custom is selected, date pickers appear for start and end dates.
+
+### Season Filter
+
+Select which season's data to view:
+
+- **All Seasons** — Aggregate data across all seasons
+- **Specific season** — Data from one season only
+
+### Season Comparison
+
+Select a second season in the "Compare to" dropdown to see comparison data overlaid on charts.
 
 ## Harvest Analytics
 
-Analyze your yields and productivity:
+Analyze your yields and productivity.
+
+### Summary Statistics
+
+Four key metrics shown at the top:
+
+| Metric          | Description                        |
+| --------------- | ---------------------------------- |
+| **Total lbs**   | Combined weight of all harvests    |
+| **Harvests**    | Number of harvest entries recorded |
+| **Avg Quality** | Average quality rating (1-5)       |
+| **Varieties**   | Number of unique vegetables        |
 
 ### Yield by Vegetable
 
-Bar chart showing total harvest by vegetable type:
-
-- Compare production across crops
-- Identify your best producers
-- Spot underperformers
-
-![Yield Chart](/img/screenshots/analytics-yield.png)
+Bar chart showing total harvest weight by vegetable type. Helps identify your best producers.
 
 ### Harvest Timeline
 
-Line chart showing when you harvested:
-
-- Visualize harvest distribution over time
-- Identify peak harvest periods
-- Spot gaps in production
+Line chart showing harvest activity over time. When comparing seasons, both seasons' data is overlaid.
 
 ### Quality Distribution
 
-Pie chart of harvest quality ratings:
+Pie chart breaking down harvests by quality rating:
 
-- Excellent, Good, Fair, Poor breakdown
-- Identify quality trends
-- Correlate with growing conditions
+- Excellent (5)
+- Good (4)
+- Average (3)
+- Below Average (2)
+- Poor (1)
 
-### Key Metrics
+### Top Performers
 
-| Metric              | Description                     |
-| ------------------- | ------------------------------- |
-| **Total Yield**     | Combined weight of all harvests |
-| **Harvests Logged** | Number of harvest entries       |
-| **Yield per Plant** | Average production per plant    |
-| **Best Producer**   | Highest yielding variety        |
+Ranked list of your highest-yielding vegetables showing:
+
+- Total weight harvested
+- Number of harvests
+- Average quality rating
 
 ## Planting Analytics
 
-Understand your planting patterns:
+Understand your planting patterns.
 
 ### Status Breakdown
 
 Pie chart showing planting status distribution:
 
-- How many planned vs. active vs. completed
-- Track season progress
-- Identify stalled plantings
+- Planned
+- Seeds Started
+- Transplanted
+- Direct Sown
+- Growing
+- Harvesting
+- Completed
+- Failed
 
-### Planting Method Distribution
+### Success Rate by Vegetable
 
-See how you start your plants:
+Chart showing completion and success rates for different vegetables, helping identify which crops perform best.
 
-- Seed indoors percentage
-- Direct sow percentage
-- Transplant percentage
+### Planting Timeline
 
-### Timeline View
-
-Gantt-style chart showing:
-
-- When each planting started
-- Current status
-- Expected completion
-
-### Category Distribution
-
-Which plant families dominate your garden:
-
-- Tomatoes, greens, brassicas, etc.
-- Balance your garden diversity
-- Identify overplanting
+Area chart showing planting activity over time, with started and completed plantings tracked by month.
 
 ## Weather Analytics
 
-Understand your local climate patterns:
-
-### Temperature Trends
-
-Line chart of temperatures over the season:
-
-- Daily highs and lows
-- Average temperature line
-- Frost threshold indicators
-
-![Temperature Chart](/img/screenshots/analytics-temperature.png)
+Understand your local climate patterns. Requires location to be set in Settings.
 
 ### GDD Accumulation
 
-Growing Degree Days chart showing:
+Line chart showing Growing Degree Days (GDD) accumulated over the season:
 
-- Cumulative GDD over time
-- Progress toward plant maturity targets
-- Comparison with historical averages
+- Current year's cumulative GDD
+- Previous year for comparison (when available)
 
-### Precipitation Tracking
+GDD helps predict crop maturity based on accumulated heat units.
 
-Rainfall and watering visualization:
+### Temperature View
 
-- Natural precipitation events
-- Dry spells identification
-- Irrigation needs
+Toggle to temperature mode to see:
 
-### Frost Date Analysis
-
-Compare actual vs. predicted frost dates:
-
-- Spring frost (last observed)
-- Fall frost (first observed)
-- Deviation from historical average
+- Monthly average temperatures
+- High/low ranges
+- Year-over-year comparison
 
 ## Garden Utilization
 
-Analyze how effectively you use your space:
+Analyze how effectively you use your space.
 
-### Space Utilization
+### Overall Utilization
 
-Percentage of garden beds in use:
+Summary statistics showing:
 
-- Planted vs. fallow areas
-- Peak utilization timing
-- Underused spaces
+- Total bed area
+- Area in use
+- Utilization percentage
+- Number of placements
 
-### Bed Productivity
+### Bed Breakdown
 
-Compare yields across garden beds:
+List showing utilization for each garden bed:
 
-- Which beds produce most
-- Identify problem areas
-- Plan rotations
+- Bed name and total area
+- Used vs. unused space
+- Utilization percentage
+- Number of plant placements
 
-### Density Analysis
+### Crop Diversity
 
-Plant density visualization:
-
-- Plants per square foot
-- Spacing efficiency
-- Overcrowding detection
-
-### Garden Heatmap
-
-Visual representation of your garden showing:
-
-- High-yield areas (warm colors)
-- Low-yield areas (cool colors)
-- Empty spaces
-
-![Utilization Heatmap](/img/screenshots/analytics-heatmap.png)
+Pie chart showing distribution of crops by category (Nightshades, Brassicas, Greens, etc.), helping you maintain garden diversity.
 
 ## Yield Forecast
 
-Predictions based on your data:
+Predictions based on your planting data.
 
-### Expected Harvests
+### Summary Statistics
 
-Upcoming harvest predictions:
+Overview of expected harvests:
 
-- What's maturing soon
-- Estimated quantities
-- Based on historical data
+- Total expected harvests
+- Varieties maturing soon
+- Peak harvest timing
 
-### Season Projections
+### Harvest Timeline
 
-End-of-season estimates:
+Chart showing when different crops are expected to mature, with weekly or monthly views.
 
-- Total expected yield
-- Comparison with goals
-- Based on current progress
+### Glut Warnings
 
-### Confidence Levels
+Alerts when multiple crops are expected to mature simultaneously, helping you plan for busy harvest periods.
 
-Predictions show confidence:
+### Upcoming Harvests
 
-- **High** — Based on multiple data points
-- **Medium** — Limited historical data
-- **Low** — First-time variety
+Table of individual plantings expected to reach harvest, showing:
 
-## Date Range Selection
+- Vegetable and variety
+- Expected harvest date
+- Estimated days until ready
 
-Choose the timeframe for analytics:
+## Exporting Data
 
-### Presets
+### Export Data (CSV/JSON)
 
-- **Year to Date** — January 1 to today
-- **Last 3 Months** — Rolling 90 days
-- **Last 6 Months** — Rolling 180 days
-- **Last Year** — Previous 365 days
-- **All Time** — Everything recorded
+Export raw data for external analysis:
 
-### Custom Range
+1. Click **Export** in the header
+2. Select data type:
+   - **Harvest Records** — All harvest data with quantities and notes
+   - **Planting Schedules** — Planting dates, status, and details
+   - **Full Backup** — Complete database export
+3. Select format (CSV or JSON)
+4. Choose season filter or custom date range
+5. Click **Export**
 
-1. Click **Custom**
-2. Select start date
-3. Select end date
-4. Click **Apply**
+### Export Report (PDF)
 
-## Season Comparison
+Generate a PDF summary report:
 
-Compare performance across years:
-
-### Enabling Comparison
-
-1. Click **Compare Seasons**
-2. Select seasons to compare
-3. View side-by-side metrics
-
-### Comparison Metrics
-
-| Metric               | What to Compare           |
-| -------------------- | ------------------------- |
-| **Total Yield**      | Year-over-year production |
-| **Harvest Count**    | Activity levels           |
-| **Top Varieties**    | Best performers each year |
-| **Frost Dates**      | Climate variation         |
-| **GDD Accumulation** | Heat unit differences     |
-
-![Season Comparison](/img/screenshots/analytics-comparison.png)
-
-## Exporting Reports
-
-### Export Data
-
-Export raw data as CSV:
-
-1. Click **Export > Data**
-2. Select data type (harvests, plantings, etc.)
-3. Choose date range
-4. Download CSV file
-
-### Export Report
-
-Generate PDF reports:
-
-1. Click **Export > Report**
+1. Click **Report** in the header
 2. Select sections to include
-3. Choose date range
-4. Generate PDF
+3. Review the preview
+4. Click **Generate PDF**
 
-Reports include:
-
-- Summary statistics
-- Charts and graphs
-- Key insights
+Reports include summary statistics and key charts from your data.
 
 ## Tips for Using Analytics
 
 1. **Track consistently** — More data means better insights
-2. **Compare seasons** — Learn from year-over-year patterns
-3. **Watch trends** — Look for patterns, not just numbers
-4. **Act on insights** — Use data to improve planning
-5. **Export periodically** — Keep offline records
+2. **Use comparison** — Select a previous season to spot year-over-year trends
+3. **Watch quality ratings** — Track which conditions produce best results
+4. **Export periodically** — Keep offline records of your garden data
+5. **Check forecasts** — Plan your harvest schedule using predictions
 
 ---
 

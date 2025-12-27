@@ -70,9 +70,9 @@ Each block spans approximately 7 days to show the activity window.
 
 ### Interacting with the Calendar
 
-- **Click a block** — Opens the planting editor
-- **Hover over a block** — Shows planting details
-- **Click a date** — Create a new planting starting that date
+- **Click a block** — Opens the planting detail page
+- **Hover over a block** — Shows planting details tooltip
+- **Drag a block** — Reschedule the planting to a new date
 
 ### Status Filtering
 
@@ -93,17 +93,15 @@ Click multiple buttons to show several statuses at once.
 
 ### Add Planting Button
 
-Click **+ Add Planting** to open the planting editor:
+Click **+ Add Planting** to open the multi-step planting wizard:
 
 ![Add Planting Modal](/img/screenshots/schedule-add-planting.png)
 
-### Step 1: Select Vegetable
+### Step 1: Vegetable
 
-1. Search for a vegetable by name
-2. Browse categories if you're not sure what to grow
-3. Click to select the vegetable
+Search for and select a vegetable by name. You can browse categories or use the search box to find specific plants.
 
-### Step 2: Choose Variety (Optional)
+### Step 2: Variety (Optional)
 
 If the vegetable has multiple varieties:
 
@@ -111,11 +109,11 @@ If the vegetable has multiple varieties:
 2. Compare days to maturity and characteristics
 3. Select your preferred variety
 
-Or click **Use generic** to skip variety selection.
+Or click **Skip** to use the generic vegetable without a specific variety.
 
-### Step 3: Planting Method
+### Step 3: Schedule
 
-Choose how you'll plant:
+Choose how you'll plant and set your dates:
 
 | Method           | Description                              |
 | ---------------- | ---------------------------------------- |
@@ -123,41 +121,63 @@ Choose how you'll plant:
 | **Direct Sow**   | Plant seeds directly in the garden       |
 | **Transplant**   | Plant purchased or pre-started seedlings |
 
-This affects which dates are calculated and tracked.
-
-### Step 4: Review Dates
-
 SowTempo calculates recommended dates based on:
 
-- Your last/first frost dates
+- Your frost dates from the active season
 - The plant's frost tolerance
 - Days to maturity
 - Indoor seed starting lead time
 
-You'll see:
-
-| Date                 | Description                    |
-| -------------------- | ------------------------------ |
-| **Seed Start Date**  | When to plant seeds indoors    |
-| **Transplant Date**  | When to move seedlings outside |
-| **Direct Sow Date**  | When to plant seeds outside    |
-| **Expected Harvest** | Estimated harvest window       |
-
-![Calculated Dates](/img/screenshots/schedule-dates.png)
+You can use the calculated dates or toggle "Use custom dates" to set your own.
 
 :::tip
 Dates are estimates. Adjust them based on your experience, microclimate, or specific variety requirements.
 :::
 
-### Step 5: Additional Options
+### Step 4: Tasks
 
-- **Plant Count** — Number of plants
-- **Garden Bed** — Assign to a bed from Garden Layout
+Plan the tasks for this planting. SowTempo suggests default tasks based on the planting method, but you can:
+
+- Add custom tasks
+- Adjust task dates and durations
+- Remove tasks you don't need
+
+Tasks appear on the calendar as spanning badges and in the Tasks section.
+
+### Step 5: Quantity & Seeds
+
+Set how many plants you'll grow:
+
+- **Quantity** — Number of plants
 - **Notes** — Growing notes or reminders
 
-### Step 6: Save
+If you have matching seeds in your Seed Inventory, you can optionally:
 
-Click **Save** to add the planting to your schedule. It appears in the sidebar and on the calendar.
+- Select seeds to deduct from inventory
+- Specify how many seeds to use
+- Skip seed deduction if preferred
+
+### Step 6: Succession (Optional)
+
+Create multiple staggered plantings at once:
+
+- **Enable succession planting** — Toggle on to create multiple plantings
+- **Interval** — Days between each planting (default 14)
+- **Count** — Total number of succession plantings
+
+This is useful for continuous harvest of lettuce, beans, or other quick-growing crops.
+
+### Step 7: Review
+
+Review all your selections before creating:
+
+- Vegetable and variety
+- Planting method and dates
+- Number of tasks that will be created
+- Quantity and notes
+- Succession settings (if enabled)
+
+Click **Create Planting** to add to your schedule.
 
 ## Editing Plantings
 
@@ -199,34 +219,15 @@ Status progression typically follows:
 Deleting a planting removes all associated tasks and harvest records. This cannot be undone.
 :::
 
-## Duplicate Plantings
+## Succession Plantings
 
-Create succession plantings by duplicating:
-
-1. Open a planting
-2. Click **Duplicate**
-3. Adjust dates for the next succession
-4. Save
+When you create a planting with succession enabled (Step 6 of the wizard), SowTempo automatically creates multiple plantings with staggered dates. Each succession planting is grouped together in the sidebar for easy management.
 
 This is useful for:
 
-- Staggered lettuce sowings
-- Multiple tomato transplant dates
-- Successive bean plantings
-
-## Linking to Garden Layout
-
-Connect plantings to physical beds:
-
-1. Open the planting editor
-2. In the **Garden Bed** dropdown, select a bed
-3. Save
-
-This links the planting to a specific location, enabling:
-
-- Spatial tracking in Garden Layout
-- Bed timeline views
-- Crop rotation planning
+- Staggered lettuce sowings for continuous harvest
+- Multiple bean plantings throughout the season
+- Extended harvest windows for quick-maturing crops
 
 ## Exporting the Schedule
 
@@ -234,28 +235,31 @@ This links the planting to a specific location, enabling:
 
 Generate a printable planting calendar:
 
-1. Click **Export > PDF**
-2. Select date range (season, year, or custom)
-3. Choose which plantings to include
-4. Configure layout options
-5. Click **Export**
+1. Click the **Export** button in the page header
+2. Choose a format:
+   - **Monthly Calendar** — Visual calendar with spanning badges like the app
+   - **Monthly Overview** — Month-by-month summary with task tables
+   - **Weekly Calendar** — Week-by-week grid with daily tasks
+3. Select date range (start and end dates)
+4. Choose paper size (Letter, A4, Legal) and orientation
+5. Configure include options:
+   - Variety names
+   - Bed location
+   - Spacing info
+   - Checkboxes for tracking
+6. Click **Export PDF**
 
-The PDF includes:
+The PDF is generated and automatically downloaded.
 
-- Month-by-month calendar
-- Planting dates and activities
-- Variety information
+## Task Integration
 
-## Automatic Task Generation
+Tasks you create during the planting wizard (Step 4) appear:
 
-When you create a planting, SowTempo automatically generates tasks:
+- On the calendar as colored spanning badges
+- In the Tasks section for the active season
+- On the planting's detail page under the Tasks tab
 
-- **Start seeds** — Reminder to sow indoors
-- **Transplant seedlings** — When to move outside
-- **Direct sow** — When to plant seeds outside
-- **Begin harvest** — When harvest should begin
-
-Tasks appear in the Tasks section and on your [Dashboard](/docs/features/dashboard).
+Each task shows its timing relative to key dates (e.g., "2 weeks before transplant") and can be marked complete as you work through your season.
 
 ## Tips for Planting Schedule
 
