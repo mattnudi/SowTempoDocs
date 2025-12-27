@@ -4,35 +4,11 @@ sidebar_position: 1
 
 # Keyboard Shortcuts
 
-SowTempo supports keyboard shortcuts to speed up your workflow. This page lists all available shortcuts.
-
-## Global Shortcuts
-
-Available throughout the application:
-
-| Shortcut                 | Action                              |
-| ------------------------ | ----------------------------------- |
-| **Cmd/Ctrl + N**         | Create new item (context-dependent) |
-| **Cmd/Ctrl + S**         | Save current item                   |
-| **Cmd/Ctrl + Z**         | Undo last action                    |
-| **Cmd/Ctrl + Shift + Z** | Redo last undone action             |
-| **Cmd/Ctrl + ,**         | Open Settings                       |
-| **Escape**               | Close modal / Cancel operation      |
-| **?**                    | Show keyboard shortcuts help        |
-
-## Navigation
-
-| Shortcut         | Action                  |
-| ---------------- | ----------------------- |
-| **Cmd/Ctrl + 1** | Go to Dashboard         |
-| **Cmd/Ctrl + 2** | Go to Planting Schedule |
-| **Cmd/Ctrl + 3** | Go to Tasks             |
-| **Cmd/Ctrl + 4** | Go to Garden Layout     |
-| **Cmd/Ctrl + 5** | Go to Vegetables        |
+SowTempo supports keyboard shortcuts to speed up your workflow in the Garden Layout canvas. This page lists all available shortcuts.
 
 ## Garden Layout Canvas
 
-When in Garden Layout:
+The Garden Layout page has the most extensive keyboard support. All shortcuts below work when the canvas has focus (not when typing in input fields).
 
 ### Tool Selection
 
@@ -46,102 +22,91 @@ When in Garden Layout:
 
 ### Canvas Navigation
 
-| Shortcut           | Action               |
-| ------------------ | -------------------- |
-| **Scroll Up/Down** | Zoom in/out          |
-| **Space + Drag**   | Pan canvas           |
-| **F**              | Fit all beds in view |
-| **0**              | Reset zoom to 100%   |
-| **+** or **=**     | Zoom in              |
-| **-**              | Zoom out             |
+| Shortcut         | Action                    |
+| ---------------- | ------------------------- |
+| **Scroll Wheel** | Zoom in/out               |
+| **Space + Drag** | Pan canvas                |
+| **F**            | Fit all beds in view      |
+| **R**            | Reset view (pan and zoom) |
+| **+** or **=**   | Zoom in                   |
+| **-**            | Zoom out                  |
+| **Cmd/Ctrl + 0** | Reset zoom to 100%        |
+| **S**            | Zoom to selected bed      |
+
+### Grid and View Controls
+
+| Shortcut | Action      |
+| -------- | ----------- |
+| **G**    | Toggle grid |
 
 ### Selection
 
-| Shortcut             | Action            |
-| -------------------- | ----------------- |
-| **Click**            | Select single bed |
-| **Cmd/Ctrl + Click** | Add to selection  |
-| **Cmd/Ctrl + A**     | Select all beds   |
-| **Escape**           | Deselect all      |
+| Shortcut          | Action                          |
+| ----------------- | ------------------------------- |
+| **Click**         | Select single bed               |
+| **Shift + Click** | Add to selection (multi-select) |
+| **Cmd/Ctrl + A**  | Select all beds                 |
+| **Escape**        | Deselect all                    |
 
 ### Editing
 
-| Shortcut                    | Action                    |
-| --------------------------- | ------------------------- |
-| **Delete** or **Backspace** | Delete selected           |
-| **Cmd/Ctrl + D**            | Duplicate selected        |
-| **Arrow Keys**              | Nudge selected (1 unit)   |
-| **Shift + Arrow Keys**      | Nudge selected (10 units) |
+| Shortcut                    | Action          |
+| --------------------------- | --------------- |
+| **Delete** or **Backspace** | Delete selected |
 
-### Drawing Mode
+### Bed Timeline
 
-When drawing polygons:
+| Shortcut | Action                         |
+| -------- | ------------------------------ |
+| **T**    | Open timeline for selected bed |
 
-| Shortcut      | Action            |
-| ------------- | ----------------- |
-| **Enter**     | Complete polygon  |
-| **Escape**    | Cancel drawing    |
-| **Backspace** | Remove last point |
+### Drawing Polygons
 
-## Planting Schedule
+When drawing polygon beds:
 
-| Shortcut             | Action                                  |
-| -------------------- | --------------------------------------- |
-| **Cmd/Ctrl + N**     | Add new planting                        |
-| **E**                | Edit selected planting                  |
-| **Delete**           | Delete selected planting                |
-| **Left/Right Arrow** | Navigate months (when calendar focused) |
+| Shortcut   | Action           |
+| ---------- | ---------------- |
+| **Enter**  | Complete polygon |
+| **Escape** | Cancel drawing   |
 
-## Task Management
+### Undo/Redo
 
-| Shortcut         | Action                               |
-| ---------------- | ------------------------------------ |
-| **Cmd/Ctrl + N** | Create new task                      |
-| **Space**        | Toggle task complete (when selected) |
-| **E**            | Edit selected task                   |
+| Shortcut                 | Action                  |
+| ------------------------ | ----------------------- |
+| **Cmd/Ctrl + Z**         | Undo last action        |
+| **Cmd/Ctrl + Shift + Z** | Redo last undone action |
+| **Ctrl + Y** (Win/Linux) | Redo (alternative)      |
 
 ## Modals and Dialogs
 
-| Shortcut        | Action           |
-| --------------- | ---------------- |
-| **Escape**      | Close modal      |
-| **Enter**       | Confirm / Submit |
-| **Tab**         | Next field       |
-| **Shift + Tab** | Previous field   |
+Standard keyboard behavior applies in modals:
+
+| Shortcut        | Action         |
+| --------------- | -------------- |
+| **Escape**      | Close modal    |
+| **Tab**         | Next field     |
+| **Shift + Tab** | Previous field |
 
 ## Platform Differences
 
 ### macOS
 
 - Use **Cmd** for command shortcuts
-- **Option + Click** for special functions
-- Standard macOS text editing shortcuts work
+- Standard macOS text editing shortcuts work in input fields
 
 ### Windows / Linux
 
 - Use **Ctrl** for command shortcuts
-- **Alt + Click** for special functions
-- Standard text editing shortcuts work
-
-## Customizing Shortcuts
-
-Currently, keyboard shortcuts cannot be customized. This feature may be added in a future version.
-
-## Accessibility
-
-SowTempo supports standard accessibility features:
-
-- **Tab** navigation through UI elements
-- **Enter/Space** to activate buttons
-- **Arrow keys** for menu navigation
-- Screen reader compatible labels
+- **Ctrl + Y** works as an alternative to Ctrl+Shift+Z for redo
+- Standard text editing shortcuts work in input fields
 
 ## Tips
 
-1. **Learn canvas tools first** — V, B, C, P, A are essential
-2. **Use Cmd/Ctrl + Z freely** — Undo is your friend
-3. **F is your friend** — Fit to view when lost
-4. **Space + drag** — Fastest way to pan
+1. **Learn canvas tools first** — V, B, C, P, A let you quickly switch between modes
+2. **Use Cmd/Ctrl + Z freely** — Undo is your friend for layout changes
+3. **F is your friend** — Fit to view when you've lost track of your beds
+4. **Space + drag** — Fastest way to pan around a large garden
+5. **G toggles the grid** — Helps with alignment and spacing
 
 ---
 

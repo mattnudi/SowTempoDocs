@@ -17,7 +17,7 @@ SowTempo is a desktop application available for macOS, Windows, and Linux. Downl
 **Additional requirements:**
 
 - 200 MB disk space
-- Internet connection (for weather data and updates only)
+- Internet connection (for weather data only)
 
 ## Download
 
@@ -89,21 +89,6 @@ Windows may show a SmartScreen warning. Click **More info** and then **Run anywa
 After installation, launch SowTempo. You should see the welcome screen prompting you to set up your garden location.
 
 ![Welcome Screen](/img/screenshots/welcome-screen.png)
-
-## Updating SowTempo
-
-SowTempo checks for updates automatically when you launch the app. When an update is available:
-
-1. A notification will appear in the app
-2. Click **Download Update**
-3. The update will download in the background
-4. Restart SowTempo when prompted
-
-You can also check for updates manually in **Settings > About > Check for Updates**.
-
-### Disabling Automatic Updates
-
-If you prefer to update manually, you can disable automatic update checks in **Settings > General > Automatic Updates**.
 
 ## Data Location
 

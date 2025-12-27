@@ -18,17 +18,17 @@ Track your seed collection with the Seed Inventory. Know what you have, when it 
 
 ### Seed Fields
 
-| Field                | Required | Description                     |
-| -------------------- | -------- | ------------------------------- |
-| **Vegetable**        | Yes      | Type of seed                    |
-| **Variety**          | No       | Specific cultivar               |
-| **Quantity**         | Yes      | Number of seeds or packets      |
-| **Expiration Date**  | No       | When seeds expire               |
-| **Supplier**         | No       | Where purchased                 |
-| **Batch/Lot Number** | No       | Supplier's batch code           |
-| **Storage Location** | No       | Where seeds are stored          |
-| **Cost**             | No       | Purchase price                  |
-| **Notes**            | No       | Growing tips, germination notes |
+| Field               | Required | Description                      |
+| ------------------- | -------- | -------------------------------- |
+| **Vegetable**       | Yes      | Type of seed                     |
+| **Variety**         | No       | Specific cultivar                |
+| **Quantity**        | Yes      | Number of seeds or packets       |
+| **Unit**            | Yes      | Seeds, Packets, Grams, or Ounces |
+| **Supplier**        | No       | Where purchased                  |
+| **Purchase Date**   | No       | When seeds were bought           |
+| **Expiration Date** | No       | When seeds expire                |
+| **Lot Number**      | No       | Supplier's batch/lot code        |
+| **Notes**           | No       | Growing tips, germination notes  |
 
 ![Add Seed](/img/screenshots/inventory-add.png)
 
@@ -112,7 +112,7 @@ Update quantity when you:
 
 View how seeds have been used:
 
-1. Click **View Usage** on a seed entry
+1. Click **View Usage History** on a seed entry
 2. See linked plantings
 3. View dates and quantities used
 
@@ -180,24 +180,6 @@ Use notes to track:
 - Seed quality
 - Shipping experience
 - Value for money
-
-## Exporting Inventory
-
-### Export Options
-
-Export your inventory for:
-
-- Ordering (see what you need)
-- Sharing (with gardening friends)
-- Backup (offline record)
-
-### Export Format
-
-Exports as CSV with:
-
-- All seed fields
-- Current quantities
-- Expiration dates
 
 ## Tips for Seed Inventory
 

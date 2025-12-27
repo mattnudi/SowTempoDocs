@@ -33,7 +33,7 @@ Each season displays:
 | **Year**           | Calendar year                     |
 | **Last Frost**     | Spring frost date                 |
 | **First Frost**    | Fall frost date                   |
-| **Status**         | Active, Inactive, or Archived     |
+| **Status**         | Active or Archived                |
 | **Planting Count** | Number of plantings this season   |
 
 ![Season Card](/img/screenshots/seasons-card.png)
@@ -41,14 +41,13 @@ Each season displays:
 ### Status Indicators
 
 - **Active** (green badge) — Currently selected season
-- **Inactive** — Available but not currently active
-- **Archived** — Hidden from main view
+- **Archived** — Hidden from main view, can be restored
 
 ## Creating a Season
 
 ### New Season Button
 
-Click **+ New Season** to create a season:
+Click **New Season** to create a season:
 
 ![Create Season](/img/screenshots/seasons-create.png)
 
@@ -63,25 +62,25 @@ Click **+ New Season** to create a season:
 
 ### Frost Date Options
 
-Set frost dates using one of these methods:
+Set frost dates using these methods:
 
-1. **Auto-lookup** — Based on your ZIP code or location
-2. **Manual entry** — Pick specific dates
-3. **Copy from previous** — Use last year's dates
+- **Use location-based dates** — Toggle on to auto-fill from NOAA historical data based on your saved location
+- **Manual date pickers** — Pick specific dates for last spring frost and first fall frost
 
 :::tip
-If you're creating a season for next year, the auto-lookup will use historical averages. Adjust once you have current forecasts.
+If you're creating a season for next year, the location lookup will use historical averages. Adjust once you have current forecasts.
 :::
 
 ### Copy from Previous Season
 
-When creating a new season, you can copy data from an existing season:
+When creating a new season, you can enable "Copy from previous season" to pre-fill:
 
-- **Copy frost dates** — Use same frost timing
-- **Copy plantings** — Duplicate your planting schedule
-- **Copy garden layout** — Duplicate bed arrangements
+- Season type
+- Season name (with updated year)
+- Start and end dates (adjusted to new year)
+- Frost dates (adjusted to new year)
 
-This is useful for maintaining consistency year over year.
+This is useful for quickly setting up the next year's season with similar timing.
 
 ## Activating a Season
 
@@ -133,7 +132,7 @@ Archive seasons you're no longer actively working with:
 
 ### Viewing Archived Seasons
 
-Toggle **Show Archived** to see archived seasons.
+Click the **Archived** filter button to see archived seasons.
 
 ### Unarchiving
 
@@ -144,14 +143,11 @@ Click **Unarchive** on any archived season to restore it to the active list.
 Create a new season based on an existing one:
 
 1. Click **Duplicate** on a season card
-2. Choose what to copy:
-   - Frost dates
-   - Plantings
-   - Garden layout
-3. Set the new year
-4. Click **Create**
+2. The create modal opens with dates pre-filled from the selected season
+3. Adjust the year and any dates as needed
+4. Click **Create Season**
 
-This is the fastest way to set up a new year with your established garden plan.
+Duplicating copies the season settings (type, dates, frost dates) but does not copy plantings or garden layout — each season maintains its own independent data.
 
 ## Deleting Seasons
 
@@ -171,15 +167,15 @@ This cannot be undone.
 
 1. Click **Delete** on the season card
 2. Type the season name to confirm
-3. Click **Delete Permanently**
+3. Click **Delete Season**
 
 ## Season Comparison
 
-Compare performance across seasons in the Analytics section:
+Compare performance across seasons from the Seasons page:
 
-1. Go to **Analytics**
-2. Select **Season Comparison**
-3. Choose seasons to compare
+1. Go to **Seasons**
+2. Click **Compare Seasons** button (visible when you have 2+ non-archived seasons)
+3. Select seasons to compare
 4. View metrics side by side
 
 You can compare:

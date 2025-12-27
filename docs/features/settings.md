@@ -14,14 +14,21 @@ Configure SowTempo to match your preferences and local growing conditions.
 
 Basic application preferences:
 
-| Setting      | Options               | Description  |
-| ------------ | --------------------- | ------------ |
-| **Theme**    | Light / Dark / System | Color scheme |
-| **Language** | English (more coming) | UI language  |
+#### Appearance
 
-### Location & Climate
+| Setting   | Options               | Description                      |
+| --------- | --------------------- | -------------------------------- |
+| **Theme** | Light / Dark / System | Color scheme for the application |
 
-Configure your growing location:
+#### Layout
+
+| Setting                         | Description                                |
+| ------------------------------- | ------------------------------------------ |
+| **Collapse Sidebar by Default** | Start with the sidebar minimized on launch |
+
+### Your Location
+
+Configure your growing location to get accurate frost dates and weather data.
 
 ![Location Settings](/img/screenshots/settings-location.png)
 
@@ -31,44 +38,24 @@ Configure your growing location:
 
 1. Enter your 5-digit ZIP code
 2. Click **Look Up**
-3. Location and frost dates auto-fill
+3. Location, hardiness zone, and region auto-fill
 
-**Option 2: City Search**
+**Option 2: Manual Coordinates**
 
-1. Type your city name
-2. Select from suggestions
-3. Coordinates auto-fill
+1. Click "Enter manually" to expand the coordinate entry
+2. Enter latitude and longitude
+3. Click **Set Location**
 
-**Option 3: Manual Coordinates**
+#### Climate Information
 
-1. Enter latitude and longitude
-2. Frost dates looked up or entered manually
+When a location is set, SowTempo automatically displays:
 
-#### Hardiness Zone
+- **USDA Hardiness Zone** — Determines which plants survive winter in your area
+- **Growing Region** — Used for regional planting recommendations
 
-Your USDA Hardiness Zone determines:
+#### Historical Weather Data
 
-- Which plants survive winter
-- Perennial recommendations
-- Zone-compatible variety filtering
-
-Auto-detected from location or manually override.
-
-#### Frost Dates
-
-| Field                 | Description                        |
-| --------------------- | ---------------------------------- |
-| **Last Spring Frost** | Date after which frost is unlikely |
-| **First Fall Frost**  | Date when frost becomes likely     |
-
-These dates drive all planting calculations. Options:
-
-- **Auto from NOAA** — Historical averages for your location
-- **Manual override** — Set specific dates
-
-:::tip
-If your garden has a microclimate (urban heat island, cold pocket, etc.), override the frost dates to match your experience.
-:::
+After setting your location, you can download 10 years of historical weather data for accurate Growing Degree Day (GDD) calculations. Click **Refresh Historical Data** to download or update this data.
 
 ### Units & Display
 
@@ -78,33 +65,26 @@ Set measurement preferences:
 | ---------------- | --------------------------------------------- |
 | **Measurements** | Imperial (feet, inches) / Metric (meters, cm) |
 | **Temperature**  | Fahrenheit / Celsius                          |
-| **Weight**       | Pounds / Kilograms                            |
-| **Volume**       | Gallons / Liters                              |
-| **Date Format**  | MM/DD/YYYY / DD/MM/YYYY                       |
 
 All data is stored in canonical units (metric) and converted for display based on your preference.
 
-### Notifications
+### Frost Dates
 
-Configure alerts and reminders:
+Configure frost dates for your growing seasons. These dates drive all planting calculations.
 
-#### In-App Notifications
+| Field                 | Description                        |
+| --------------------- | ---------------------------------- |
+| **Last Spring Frost** | Date after which frost is unlikely |
+| **First Fall Frost**  | Date when frost becomes likely     |
 
-| Notification         | Description                       |
-| -------------------- | --------------------------------- |
-| **Task Reminders**   | Alerts for upcoming tasks         |
-| **Frost Alerts**     | Warnings when frost is forecasted |
-| **Harvest Ready**    | When plants reach maturity        |
-| **Weather Warnings** | Extreme weather alerts            |
+Options for setting frost dates:
 
-#### Notification Timing
+- **Use location-based frost dates** — Toggle to auto-fill from NOAA historical data based on your location
+- **Manual date pickers** — Set specific dates using the calendar inputs
 
-Choose when to see reminders:
-
-- Same day
-- 1 day before
-- 3 days before
-- 1 week before
+:::tip
+If your garden has a microclimate (urban heat island, cold pocket, etc.), use manual dates to match your experience.
+:::
 
 ### Database
 
@@ -120,8 +100,6 @@ Manage the vegetable database:
 | **Last Updated** | When database was last refreshed |
 | **Varieties**    | Number of varieties included     |
 
-Click **Check for Updates** to see if a newer database version is available.
-
 #### Import Database
 
 Refresh the built-in vegetable database:
@@ -134,21 +112,20 @@ This doesn't affect your custom plants.
 
 #### Custom Plants
 
-- View count of custom plants
-- **Manage** — Opens custom plant editor
+- View count of custom plants you've created
 - Custom plants are never overwritten by imports
 
 ### Data Management
 
-Control your data:
+Control your data with backup and restore functionality.
 
 #### Backup
 
-Create a backup of all your data:
+Create a backup of all your garden data:
 
 1. Click **Create Backup**
-2. Choose save location
-3. Save the `.sowtempo-backup` file
+2. Choose a save location
+3. Save the `.json` backup file
 
 Backups include:
 
@@ -158,31 +135,30 @@ Backups include:
 - Settings and preferences
 - Custom plants
 
+**Quick Backup** creates an auto-backup stored in the application data folder.
+
 #### Restore
 
 Restore from a backup:
 
-1. Click **Restore Backup**
-2. Select a backup file
-3. Confirm restoration
+1. Click **Select Backup File...**
+2. Select a `.json` backup file
+3. Choose restore options:
+   - **Preserve custom plants** — Keep custom plants created after the backup
+   - **Keep current preferences** — Retain your current location, units, etc.
+4. Confirm restoration
 
 :::warning
-Restoring a backup replaces all current data. Create a new backup first if you want to preserve current data.
+Restoring a backup replaces your current data. Create a new backup first if you want to preserve current data.
 :::
 
-#### Export Data
+#### Recent Auto-Backups
 
-Export data as CSV files:
-
-- Plantings
-- Harvests
-- Journal entries
-- Inventory
-- All records
+View and access recent auto-backups stored by the application.
 
 #### Database Location
 
-Shows where your data is stored:
+Your data is stored locally:
 
 - **macOS:** `~/Library/Application Support/SowTempo/`
 - **Windows:** `%APPDATA%\SowTempo\`
@@ -190,45 +166,35 @@ Shows where your data is stored:
 
 ### About
 
-Application information:
+Application information and resources:
 
-| Field       | Description           |
-| ----------- | --------------------- |
-| **Version** | Current app version   |
-| **Build**   | Build number and date |
-| **License** | Software license type |
+| Field                | Description                            |
+| -------------------- | -------------------------------------- |
+| **Version**          | Current app version                    |
+| **Platform**         | Your operating system                  |
+| **Architecture**     | System architecture (x64, arm64, etc.) |
+| **Electron/Node.js** | Runtime versions                       |
 
-#### Links
+#### Privacy First
 
-- **Documentation** — Opens this documentation
-- **Privacy Policy** — Privacy information
-- **Report an Issue** — GitHub issue tracker
-- **Check for Updates** — Manual update check
+SowTempo is designed with privacy in mind:
 
-#### Automatic Updates
+- All data stored locally on your computer
+- No account or sign-up required
+- No tracking or analytics
+- No data sent to external servers (except weather from Open-Meteo)
 
-Toggle automatic update checking:
+#### Resources
 
-- **Enabled** — Checks for updates on launch
-- **Disabled** — Only manual checks
-
-## Resetting Settings
-
-To reset all settings to defaults:
-
-1. Go to **Settings > General**
-2. Click **Reset to Defaults**
-3. Confirm the reset
-
-This resets preferences only, not your data.
+- **Source Code** — View the project on GitHub
+- **Report an Issue** — Submit bugs or feature requests
 
 ## Tips for Settings
 
-1. **Set location first** — Accurate frost dates are essential
+1. **Set location first** — Accurate frost dates are essential for planting schedules
 2. **Choose your units** — Set once and forget
-3. **Backup regularly** — Protect your data
-4. **Check for updates** — Keep the app current
-5. **Adjust frost dates** — Fine-tune based on experience
+3. **Backup regularly** — Protect your garden data
+4. **Adjust frost dates** — Fine-tune based on your local experience
 
 ---
 
