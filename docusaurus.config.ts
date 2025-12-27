@@ -16,7 +16,13 @@ const config: Config = {
   projectName: 'SowTempo',
 
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+      onBrokenMarkdownImages: 'warn',
+    },
+  },
 
   i18n: {
     defaultLocale: 'en',

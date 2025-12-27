@@ -255,7 +255,7 @@ When you create a planting, SowTempo automatically generates tasks:
 - **Direct sow** — When to plant seeds outside
 - **Begin harvest** — When harvest should begin
 
-Tasks appear in the [Tasks](/docs/features/task-management) section and on your Dashboard.
+Tasks appear in the Tasks section and on your [Dashboard](/docs/features/dashboard).
 
 ## Tips for Planting Schedule
 
