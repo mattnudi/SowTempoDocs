@@ -1,0 +1,113 @@
+/**
+ * Homepage-specific styles
+ */
+
+.heroBanner {
+  padding: 4rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Features Section */
+.features {
+  padding: 4rem 0;
+  background: var(--ifm-background-color);
+}
+
+.featuresSubtitle {
+  font-size: 1.25rem;
+  color: var(--ifm-color-emphasis-700);
+  max-width: 600px;
+  margin: 0 auto 3rem;
+}
+
+.feature {
+  margin-bottom: 2rem;
+}
+
+.featureLink {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  height: 100%;
+}
+
+.featureLink:hover {
+  text-decoration: none;
+}
+
+.featureLink h3 {
+  color: var(--ifm-heading-color);
+}
+
+/* Screenshot Section */
+.screenshotSection {
+  padding: 4rem 0;
+  background: linear-gradient(180deg, var(--ifm-background-color) 0%, #f0fdf4 100%);
+}
+
+[data-theme='dark'] .screenshotSection {
+  background: linear-gradient(180deg, var(--ifm-background-color) 0%, #14532d 100%);
+}
+
+.screenshotContainer {
+  max-width: 900px;
+  margin: 2rem auto 0;
+}
+
+/* CTA Section */
+.ctaSection {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #16a34a 0%, #15803d 100%);
+  color: white;
+}
+
+.ctaSection h2 {
+  color: white;
+}
+
+.ctaSubtitle {
+  font-size: 1.25rem;
+  opacity: 0.9;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.ctaSection .button--secondary {
+  color: white;
+  border-color: white;
+}
+
+.ctaSection .button--secondary:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+}
+
+/* Responsive */
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 3rem 1rem;
+  }
+
+  .features {
+    padding: 3rem 0;
+  }
+
+  .screenshotSection {
+    padding: 3rem 1rem;
+  }
+
+  .ctaSection {
+    padding: 3rem 1rem;
+  }
+}

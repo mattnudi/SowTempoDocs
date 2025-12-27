@@ -1,0 +1,105 @@
+# Screenshot Placeholder Directory
+
+This directory will contain screenshots for the documentation.
+
+## Required Screenshots
+
+Screenshots should be captured from the running application and saved as PNG files.
+Recommended dimensions vary by content type:
+
+### General Screenshots (1200x800)
+- dashboard-overview.png
+- dashboard-full.png
+- dashboard-tour.png
+- dashboard-seasonal-context.png
+- dashboard-todays-tasks.png
+- dashboard-frost-alert.png
+- dashboard-empty.png
+
+### Layout Screenshots (1200x800)
+- layout-overview.png
+- layout-toolbar.png
+- layout-draw-rectangle.png
+- layout-draw-polygon.png
+- layout-bed-inspector.png
+- layout-add-placement.png
+- layout-patterns.png
+- layout-merge-operations.png
+- layout-timeline.png
+- layout-export-pdf.png
+
+### Schedule Screenshots (1200x800)
+- schedule-overview.png
+- schedule-sidebar.png
+- schedule-calendar.png
+- schedule-add-planting.png
+- schedule-dates.png
+- schedule-actual-date.png
+
+### Vegetables Screenshots (1200x800)
+- vegetables-overview.png
+- vegetables-grid.png
+- vegetables-list.png
+- vegetables-filters.png
+- vegetable-detail.png
+- variety-detail.png
+- vegetables-add-custom.png
+
+### Other Feature Screenshots (1200x800)
+- seasons-overview.png
+- seasons-card.png
+- seasons-create.png
+- seasons-activate.png
+- harvests-overview.png
+- harvests-log.png
+- harvests-list.png
+- journal-overview.png
+- journal-new-entry.png
+- journal-photos.png
+- journal-list.png
+- inventory-overview.png
+- inventory-add.png
+- inventory-list.png
+- inventory-alerts.png
+- analytics-overview.png
+- analytics-yield.png
+- analytics-temperature.png
+- analytics-heatmap.png
+- analytics-comparison.png
+- settings-overview.png
+- settings-location.png
+- settings-database.png
+- tasks-view.png
+
+### Getting Started Screenshots (1200x800)
+- install-macos.png
+- install-windows.png
+- welcome-screen.png
+- setup-wizard.png
+- setup-location.png
+- setup-frost-dates.png
+- setup-create-season.png
+
+### Guide Screenshots (1200x800)
+- guide-location-setup.png
+- guide-draw-beds.png
+- guide-add-planting.png
+- guide-plant-placement.png
+- guide-frost-timeline.png
+- guide-gdd-dashboard.png
+- guide-succession-duplicate.png
+- guide-succession-calendar.png
+- guide-rotation-timeline.png
+
+### Interface Screenshots (1400x900)
+- interface-overview.png
+- sowtempo-social-card.png (1200x630 for social sharing)
+
+## Screenshot Guidelines
+
+1. Use a clean application state (no test data artifacts)
+2. Use consistent window size
+3. Capture in both light and dark mode if possible
+4. Ensure text is readable
+5. Highlight relevant UI elements when helpful
+6. Remove any personal information

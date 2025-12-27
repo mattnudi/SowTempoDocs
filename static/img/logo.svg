@@ -1,0 +1,11 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Leaf/plant shape -->
+  <path d="M20 4C20 4 8 12 8 24C8 32 13 36 20 36C27 36 32 32 32 24C32 12 20 4 20 4Z" fill="#16a34a"/>
+  <!-- Stem -->
+  <path d="M20 18V36" stroke="#14532d" stroke-width="2" stroke-linecap="round"/>
+  <!-- Leaf vein -->
+  <path d="M20 18C20 18 14 22 14 26" stroke="#14532d" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M20 18C20 18 26 22 26 26" stroke="#14532d" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Sun accent -->
+  <circle cx="30" cy="10" r="4" fill="#fbbf24"/>
+</svg>

@@ -1,0 +1,281 @@
+/**
+ * SowTempo Documentation Theme
+ *
+ * Custom styling for the SowTempo documentation site.
+ * Uses a natural, garden-inspired color palette.
+ */
+
+/* Primary color palette - garden greens with warm accents */
+:root {
+  /* Primary green - fresh growth */
+  --ifm-color-primary: #16a34a;
+  --ifm-color-primary-dark: #15803d;
+  --ifm-color-primary-darker: #166534;
+  --ifm-color-primary-darkest: #14532d;
+  --ifm-color-primary-light: #22c55e;
+  --ifm-color-primary-lighter: #4ade80;
+  --ifm-color-primary-lightest: #86efac;
+
+  /* Code blocks */
+  --docusaurus-highlighted-code-line-bg: rgba(22, 163, 74, 0.1);
+
+  /* Typography */
+  --ifm-font-family-base:
+    system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    sans-serif;
+  --ifm-heading-font-family: var(--ifm-font-family-base);
+  --ifm-font-size-base: 16px;
+
+  /* Spacing */
+  --ifm-spacing-horizontal: 1.5rem;
+
+  /* Border radius */
+  --ifm-global-radius: 0.5rem;
+  --ifm-button-border-radius: 0.5rem;
+  --ifm-card-border-radius: 0.75rem;
+
+  /* Navbar */
+  --ifm-navbar-background-color: #ffffff;
+  --ifm-navbar-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* Dark mode adjustments */
+[data-theme='dark'] {
+  --ifm-color-primary: #4ade80;
+  --ifm-color-primary-dark: #22c55e;
+  --ifm-color-primary-darker: #16a34a;
+  --ifm-color-primary-darkest: #15803d;
+  --ifm-color-primary-light: #86efac;
+  --ifm-color-primary-lighter: #bbf7d0;
+  --ifm-color-primary-lightest: #dcfce7;
+
+  --docusaurus-highlighted-code-line-bg: rgba(74, 222, 128, 0.15);
+
+  --ifm-navbar-background-color: #1a1a1a;
+  --ifm-background-color: #121212;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  box-shadow: var(--ifm-navbar-shadow);
+}
+
+.navbar__title {
+  font-weight: 700;
+  color: var(--ifm-color-primary-dark);
+}
+
+[data-theme='dark'] .navbar__title {
+  color: var(--ifm-color-primary-light);
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 50%, #bbf7d0 100%);
+  padding: 4rem 0;
+}
+
+[data-theme='dark'] .hero {
+  background: linear-gradient(135deg, #14532d 0%, #166534 50%, #15803d 100%);
+}
+
+.hero__title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #14532d;
+}
+
+[data-theme='dark'] .hero__title {
+  color: #f0fdf4;
+}
+
+.hero__subtitle {
+  font-size: 1.5rem;
+  color: #166534;
+  max-width: 600px;
+  margin: 1rem auto;
+}
+
+[data-theme='dark'] .hero__subtitle {
+  color: #bbf7d0;
+}
+
+/* ===== BUTTONS ===== */
+.button--primary {
+  background: var(--ifm-color-primary);
+  border-color: var(--ifm-color-primary);
+}
+
+.button--primary:hover {
+  background: var(--ifm-color-primary-dark);
+  border-color: var(--ifm-color-primary-dark);
+}
+
+.button--secondary {
+  color: var(--ifm-color-primary-dark);
+  border-color: var(--ifm-color-primary);
+}
+
+.button--secondary:hover {
+  background: var(--ifm-color-primary-lightest);
+  color: var(--ifm-color-primary-darkest);
+}
+
+[data-theme='dark'] .button--secondary {
+  color: var(--ifm-color-primary-light);
+  border-color: var(--ifm-color-primary);
+}
+
+[data-theme='dark'] .button--secondary:hover {
+  background: rgba(74, 222, 128, 0.2);
+  color: var(--ifm-color-primary-lightest);
+}
+
+/* ===== FEATURE CARDS ===== */
+.feature-card {
+  background: #ffffff;
+  border-radius: var(--ifm-card-border-radius);
+  padding: 1.5rem;
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.1),
+    0 1px 2px rgba(0, 0, 0, 0.06);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+[data-theme='dark'] .feature-card {
+  background: #1f1f1f;
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* ===== SIDEBAR ===== */
+.menu__link--active:not(.menu__link--sublist) {
+  background: rgba(22, 163, 74, 0.1);
+  border-left: 3px solid var(--ifm-color-primary);
+  padding-left: calc(var(--ifm-menu-link-padding-horizontal) - 3px);
+}
+
+[data-theme='dark'] .menu__link--active:not(.menu__link--sublist) {
+  background: rgba(74, 222, 128, 0.1);
+}
+
+/* ===== DOCS CONTENT ===== */
+.markdown h1:first-child {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.markdown img {
+  border-radius: var(--ifm-global-radius);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  margin: 1.5rem 0;
+}
+
+/* Admonitions/callouts */
+.alert--info {
+  --ifm-alert-background-color: #ecfdf5;
+  --ifm-alert-border-color: #10b981;
+}
+
+[data-theme='dark'] .alert--info {
+  --ifm-alert-background-color: rgba(16, 185, 129, 0.1);
+}
+
+.alert--tip {
+  --ifm-alert-background-color: #f0fdf4;
+  --ifm-alert-border-color: #22c55e;
+}
+
+[data-theme='dark'] .alert--tip {
+  --ifm-alert-background-color: rgba(34, 197, 94, 0.1);
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  background: #14532d;
+}
+
+.footer__title {
+  color: #bbf7d0;
+}
+
+.footer__link-item {
+  color: #86efac;
+}
+
+.footer__link-item:hover {
+  color: #f0fdf4;
+}
+
+/* ===== SCREENSHOT PLACEHOLDERS ===== */
+.screenshot-placeholder {
+  background: linear-gradient(135deg, #e2e8f0 0%, #f1f5f9 100%);
+  border: 2px dashed #94a3b8;
+  border-radius: var(--ifm-global-radius);
+  padding: 3rem;
+  text-align: center;
+  color: #64748b;
+  margin: 1.5rem 0;
+}
+
+[data-theme='dark'] .screenshot-placeholder {
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  border-color: #475569;
+  color: #94a3b8;
+}
+
+.screenshot-placeholder__label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.screenshot-placeholder__dimensions {
+  font-size: 0.875rem;
+  opacity: 0.8;
+}
+
+/* ===== TABLE OF CONTENTS ===== */
+.table-of-contents__link--active {
+  color: var(--ifm-color-primary);
+  font-weight: 600;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 996px) {
+  .hero__title {
+    font-size: 2.5rem;
+  }
+
+  .hero__subtitle {
+    font-size: 1.25rem;
+  }
+}
+
+/* ===== UTILITY CLASSES ===== */
+.text-center {
+  text-align: center;
+}
+
+.mt-4 {
+  margin-top: 2rem;
+}
+
+.mb-4 {
+  margin-bottom: 2rem;
+}
+
+.gap-4 {
+  gap: 2rem;
+}
