@@ -8,13 +8,13 @@ SowTempo stores all your data locally on your computer. This guide explains wher
 
 ## Data Storage Location
 
-Your data is stored in a SQLite database at:
+Your data is stored in a SQLite database in a `data` subfolder:
 
-| Platform    | Location                                             |
-| ----------- | ---------------------------------------------------- |
-| **macOS**   | `~/Library/Application Support/SowTempo/sowtempo.db` |
-| **Windows** | `%APPDATA%\SowTempo\sowtempo.db`                     |
-| **Linux**   | `~/.config/SowTempo/sowtempo.db`                     |
+| Platform    | Location                                                  |
+| ----------- | --------------------------------------------------------- |
+| **macOS**   | `~/Library/Application Support/SowTempo/data/sowtempo.db` |
+| **Windows** | `%APPDATA%\SowTempo\data\sowtempo.db`                     |
+| **Linux**   | `~/.config/SowTempo/data/sowtempo.db`                     |
 
 ### Accessing the Folder
 
@@ -22,28 +22,35 @@ Your data is stored in a SQLite database at:
 
 1. Open Finder
 2. Press **Cmd + Shift + G**
-3. Enter `~/Library/Application Support/SowTempo/`
+3. Enter `~/Library/Application Support/SowTempo/data/`
 
 **Windows:**
 
 1. Press **Win + R**
-2. Enter `%APPDATA%\SowTempo`
+2. Enter `%APPDATA%\SowTempo\data`
 3. Press Enter
 
 **Linux:**
 
 1. Open file manager
 2. Press **Ctrl + L**
-3. Enter `~/.config/SowTempo/`
+3. Enter `~/.config/SowTempo/data/`
 
 ## What's Stored
 
-Your data folder contains:
+Your data folder (`data/`) contains:
 
 | File          | Contents                               |
 | ------------- | -------------------------------------- |
 | `sowtempo.db` | All your garden data (SQLite database) |
-| `images/`     | Photos from journal entries (if any)   |
+
+Other files in the app support folder:
+
+| File/Folder | Contents                             |
+| ----------- | ------------------------------------ |
+| `photos/`   | Photos from journal entries (if any) |
+| `logs/`     | Application log files                |
+| `backups/`  | Auto-backup files (if enabled)       |
 
 ## Creating Backups
 
